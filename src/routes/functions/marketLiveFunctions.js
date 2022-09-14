@@ -138,7 +138,7 @@ async function updatePlayerMarket ({playerId, typeProduct, qualityProduct, stock
 
             if(qualityProduct) await marketPlayer.increment("qualityProduct", {by: qualityProduct})
             if(stockProduct) await marketPlayer.increment("stockProduct", {by: stockProduct})
-            if(priceProduct) await marketPlayer.increment("priceProduct", {by: priceProduct})
+            if(priceProduct) await marketPlayer.update({priceProduct: priceProduct})
 
         }
 
