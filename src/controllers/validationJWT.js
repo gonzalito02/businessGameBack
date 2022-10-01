@@ -12,8 +12,11 @@ module.exports = (req, res, next) => {
     if (!data) {
         return res.status(401).send("Invalid token")
     }
-
+    
     var token = data.substring(7)
+    
+    console.log("soy el token", token)
+    
     const validator = jwt.verify(token, ACCESS_TOKEN_SECRET)
 
     const tokenId = validator.id.toString()
