@@ -43,7 +43,7 @@ function studentCreateInit () {
 function gameControlInit () {
   gameControlCreate(
     {
-      period: 1,
+      period: 2,
       taxesRate: 0.35,
       qualityInvCost: 25000,
       productionCapacity: 1000000,
