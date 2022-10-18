@@ -43,7 +43,7 @@ function studentCreateInit () {
 function gameControlInit () {
   gameControlCreate(
     {
-      period: 2,
+      period: 3,
       taxesRate: 0.35,
       qualityInvCost: 25000,
       productionCapacity: 1000000,
@@ -57,7 +57,7 @@ function gameControlInit () {
       maxRateFinFixedInvest: 0.3,
       maxTotalFinInvestAmount: 200000,
       wallet: 0,
-      actionGame: 1 // 0 = Production phase; 1 = Market phase; 2 = Clean phase (clearing)  
+      actionGame: 0 // 0 = Production phase; 1 = Market phase; 2 = Clean phase (clearing)  
     }
   )
   console.log("gameControlInit function executed")
