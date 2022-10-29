@@ -57,7 +57,7 @@ function gameControlInit () {
       maxRateFinFixedInvest: 0.3,
       maxTotalFinInvestAmount: 200000,
       wallet: 0,
-      actionGame: 0 // 0 = Production phase; 1 = Market phase; 2 = Clean phase (clearing)  
+      actionGame: 1 // 0 = Production phase; 1 = Market phase; 2 = Clean phase (clearing)  
     }
   )
   console.log("gameControlInit function executed")
